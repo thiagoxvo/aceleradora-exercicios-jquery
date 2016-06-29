@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+  <style>
+    .container {
+      margin-top: 30px;
+    }
+
+    .prev {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .next {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    #parent {
+      padding: 20px;
+      margin: 20px;
+    }
+    .red {
+      border: 1px solid black;
+      margin: 5px;
+      padding: 20px;
+      background-color: lightcoral;
+    }
+
+    .blue {
+      border: 1px solid black;
+      margin: 5px;
+      padding: 20px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Exercício 7</h1>
+    <div class="jumbotron">
+      <p>Selecione o elemento id="child" e mude a cor dele quando passar o mouse por cima. A cor original deve ser mantida ao tirar o mouse de cima.</p>
+      <p>Alguns eventos de mouse:</p>
+      <ul>
+        <li>.mouseover</li>
+        <li>.mouseout</li>
+        <li>.mouseleave</li>
+        <li>.mouseenter</li>
+      </ul>
+
+      <div id="parent">
+        <div id="child" class="red">Passe o mouse por cima de mim e troque de cor</div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p class="prev"><a class="btn btn-primary btn-lg" href="6.html" role="button">Exercício Anterior</a></p>
+  <p class="next"><a class="btn btn-primary btn-lg" href="8.html" role="button">Próximo Exercício</a></p>
+
+</body>
+
+</html>
