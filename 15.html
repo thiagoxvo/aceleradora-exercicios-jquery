@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+  <style>
+    .container {
+      margin-top: 30px;
+    }
+
+    .prev {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .next {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    #retorno {
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Exercício 15</h1>
+    <div class="jumbotron">
+      <p>Chamadas Ajax</p>
+      <p>A página deve exibir o retorno da chamada GET no endpoint /posts/1 do host http://jsonplaceholder.typicode.com/</p>
+
+      <div id="retorno"></div>
+
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <script>
+    //Insira seu código aqui
+    //Documentação http://api.jquery.com/jquery.ajax/
+
+    $.ajax({
+      url: 'http://jsonplaceholder.typicode.com/posts/1173187',
+      method: 'GET'
+    }).then(function(data) {
+      console.log(data);
+    });
+
+  </script>
+</body>
+
+</html>
